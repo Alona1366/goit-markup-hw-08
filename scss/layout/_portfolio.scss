@@ -1,8 +1,14 @@
 .tabs {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: left;
     gap: 8px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+    justify-content: center;
     margin-bottom: 50px;
+    }
 }
 
 .portfolio__tabs-selected {
@@ -34,6 +40,11 @@
     min-height: 38px;
     padding: 6px 22px;
 
+    margin-bottom: 15px;
+    &:last-child {
+    margin-bottom: 0;
+    }
+
     font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
@@ -56,14 +67,44 @@
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
     }
+
+    @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    }
 }
 
 .portfolio {
     @include section;
 
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
+
+.card__item {
+    --items: 1;
+
+    @media screen and (min-width: 768px) {
+    --items: 2;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    --items: 4;
+    display: flex;
+    }
+}
+
 
 .portfolio__container {
     @include container;
@@ -71,7 +112,6 @@
 
 .portfolio__card-item {
     cursor: pointer;
-
 }
 
 .portfolio__overlay {
@@ -93,15 +133,23 @@
     transition: var(--animation);
 
     &-block {
-    width: 370px;
+    width: 450px;
     height: 294px;
     overflow: hidden;
     
     position: relative;
+
+    @media screen and (min-width: 768px) {
+    width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    width: 370px;
+    }
     }
 
     &-text {
-    text-align: center;
+    text-align: left;
     
     font-family: var(--primary-font-family);
     font-weight: 400;
@@ -115,7 +163,10 @@
 }
 
 .portfolio__card-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 
     transition: box-shadow var(--animation);
 
@@ -130,6 +181,8 @@
 }
 
 .portfolio__card-wrapper {
+    flex-grow: 1;
+
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
