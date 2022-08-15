@@ -1,8 +1,13 @@
 .proposals {
     @include section;
-
+    display: none;
+        
+    @media screen and (min-width: 1200px) {
     display: flex;
-    padding-bottom: 94px;
+    
+    padding-top: 0px;
+    padding-bottom: 94px;    
+    }
 }
 
 .proposals__container {
