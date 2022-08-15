@@ -1,11 +1,21 @@
 .contacts {
     display: flex;
     gap: 50px;
+
+@media screen and (min-width: 768px) {
+display: block;
+gap: 10px;
+}
+    
+@media screen and (min-width: 1200px) {
+display: flex;
+gap: 50px;
+}
 }
 
 .mail__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
     display: flex;
     align-items: center;
@@ -13,11 +23,20 @@
     font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
 
     transition: color var(--animation);
+
+    @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+    line-height: 1.67;
+    }
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    line-height: 1.14;
+}
 }
 
 .mail__icon {
@@ -33,8 +52,8 @@
 }
 
 .phone__number {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
     display: flex;
     align-items: center;
@@ -52,6 +71,14 @@
     &:focus {
     color: var(--accent-color);
     }
+
+    @media screen and (min-width: 768px) {
+    line-height: 1.67;
+    }
+
+    @media screen and (min-width: 1200px) {
+    line-height: 1.14;
+    }
 }
 
 .phone__icon {
@@ -60,11 +87,6 @@
     height: 16px;
     fill: currentColor;
 }
-
-
-
-
-
 
 .mail__link:hover,
 .mail__link:focus {
