@@ -1,6 +1,6 @@
 .menu-btn {
     z-index: 1000;
-    margin-left: auto;
+    margin-left: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +52,7 @@
     transition: transform var(--animation);
 }
 
-.menu-container.is-open & {
+.menu-container.is-open {
     transform: translateX(0);
 }
 
@@ -62,9 +62,9 @@
     //     right: 8px;
 
     &:hover {
-            fill: var(--accent-color);
-            transition: fill var(--animation);
-        }
+    fill: var(--accent-color);
+    transition: fill var(--animation);
+    }
 }
 
 .mobile-nav {
