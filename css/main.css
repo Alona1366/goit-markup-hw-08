@@ -147,7 +147,7 @@ ol {
 
 .logo {
   display: block;
-  margin-right: 50%;
+  margin-right: auto;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -407,6 +407,7 @@ ol {
 }
 
 .menu-btn {
+  z-index: 1000;
   margin-left: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -464,6 +465,11 @@ ol {
   .menu-container {
     display: none;
   }
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .menu-close-icon:hover {
