@@ -29,7 +29,13 @@
     <header class="header">
       <div class="header__conteiner">
         <nav class="navigation navigation__conteiner">
-          <a class="logo" href="./index.html">Web<span class="logo-dark">Studio </span> </a>
+          <a class="logo" href="./index.html">Web<span class="logo-dark">Studio </span></a>
+          <button class="menu-btn" type="button" data-menu-open>
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
+
           <ul class="menu list navigation__list">
             <li class="navigation__item">
               <a class="navigation__link navigation__link--current link" href="./studio.html"
@@ -686,6 +692,54 @@
 
           <button class="modal__form-btn" type="submit">Відправити</button>
         </form>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="menu-container" data-menu>
+      <button class="menu-btn" type="button" data-menu-close>
+        <svg class="menu-close-icon" width="40" height="40">
+          <use href="./images/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav list">
+        <li class="mobile-nav-item">
+          <a href="" class="mobile-link link">Студія</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="" class="mobile-link link">Портфоліо</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="" class="mobile-link link">Контакти</a>
+        </li>
+      </ul>
+
+      <div class="mobile-contacts-list">
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts-list">
+            <a class="mobile-contacts-link link" href="+380441111111">+38 044 111 11 11</a>
+          </li>
+          <li class="mail-contacts-list">
+            <a class="mail-contacts-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-socilas list">
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Instagram</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Twitter</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Facebook</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
 
