@@ -1,6 +1,5 @@
 .menu-btn {
-    z-index: 1000;
-    margin-left: 100%;
+    margin-left: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -57,9 +56,9 @@
 }
 
 .menu-close-icon {
-    // position: absolute;
-    //     top: 8px;
-    //     right: 8px;
+    position: absolute;
+        top: -35px;
+        right: -20px;
 
     &:hover {
     fill: var(--accent-color);
