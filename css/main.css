@@ -147,7 +147,7 @@ ol {
 
 .logo {
   display: block;
-  margin-right: 93px;
+  margin-right: 50%;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -155,6 +155,11 @@ ol {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 .logo-dark {
   color: var(--primary-color);
@@ -401,6 +406,143 @@ ol {
   transition: background var(--animation), box-shadow var(--animation), -webkit-box-shadow var(--animation);
 }
 
+.menu-btn {
+  margin-left: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+.menu-container .menu-btn {
+  position: absolute;
+  top: 48px;
+  right: 30px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  background-color: var(--secondary-color);
+  padding: 48px 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform var(--animation);
+  transition: -webkit-transform var(--animation);
+  transition: transform var(--animation);
+  transition: transform var(--animation), -webkit-transform var(--animation);
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-close-icon:hover {
+  fill: var(--accent-color);
+  -webkit-transition: fill var(--animation);
+  transition: fill var(--animation);
+}
+
+.mobile-nav {
+  margin-bottom: auto;
+}
+
+.mobile-nav-item {
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  -webkit-transition: color var(--animation);
+  transition: color var(--animation);
+}
+.mobile-nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-nav-item:hover, .mobile-nav-item:focus {
+  color: var(--accent-color);
+}
+
+.mobile-contacts {
+  display: inline-block;
+  margin-bottom: 64px;
+}
+
+.mobile-contacts-link {
+  display: block;
+  margin-bottom: 32px;
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mail-contacts-link {
+  display: block;
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-socilas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-socilas-item:not(:last-child) .mobile-socilas-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .header {
   margin-left: auto;
   margin-right: auto;
@@ -469,14 +611,27 @@ ol {
 }
 
 .navigation__conteiner {
-  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .navigation__conteiner {
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+  }
 }
 
 .navigation__link {
@@ -508,11 +663,10 @@ ol {
   background-color: var(--accent-color);
 }
 
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts {
