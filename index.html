@@ -138,35 +138,62 @@
         <div class="proposals__container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="card list">
-            <li class="proposals__photo card__item">
-              <img
-                src="./images/what_we_do/img.jpg"
-                alt="сотрудник набирает текст"
-                width="370"
-                height="294"
-              />
+            <li class="proposals__photo">
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\what_we_do\img-1_lg@1x.jpg 1x,
+                    ./images\what_we_do\img-1_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images\what_we_do\img-1_lg@1x.jpg" alt="сотрудник набирает текст" />
+              </picture>
+
               <div class="proposal__background">
                 <p class="proposal__text">Десктопні додатки</p>
               </div>
             </li>
-            <li class="proposals__photo card__item">
-              <img
-                src="./images/what_we_do/img-1.jpg"
-                alt="сотрудник держит телефон"
-                width="370"
-                height="294"
-              />
+            <li class="proposals__photo">
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\what_we_do\img-2_lg@1x.jpg 1x,
+                    ./images\what_we_do\img-2_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images\what_we_do\img-2_lg@1x.jpg" alt="сотрудник держит телефон" />
+              </picture>
+
               <div class="proposal__background">
                 <p class="proposal__text">Мобільні додатки</p>
               </div>
             </li>
-            <li class="proposals__photo card__item">
-              <img
-                src="./images/what_we_do/img-2.jpg"
-                alt="сотрудник выбирает цвет на планшете"
-                width="370"
-                height="294"
-              />
+            <li class="proposals__photo">
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\what_we_do\img-3_lg@1x.jpg 1x,
+                    ./images\what_we_do\img-3_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img
+                  src="./images\what_we_do\img-3_lg@1x.jpg"
+                  alt="сотрудник выбирает цвет на планшете"
+                />
+              </picture>
+
               <div class="proposal__background">
                 <p class="proposal__text">Дизайнерські рішення</p>
               </div>
@@ -181,12 +208,38 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list card">
             <li class="team__card card__item">
-              <img
-                src="./images/our_team/img.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\our_team\img-1_lg@1x.jpg 1x,
+                    ./images\our_team\img-1_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\our_team\img-1_md@1x.jpg 1x,
+                    ./images\our_team\img-1_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\our_team\img-1_sm@1x.jpg 1x,
+                    ./images\our_team\img-1_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images\our_team\img-1_sm@1x.jp" alt="Игорь Демьяненко" />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__title">Ігор Демяненко</h3>
                 <p class="team__description" lang="en">Product Designer</p>
@@ -247,7 +300,38 @@
               </div>
             </li>
             <li class="team__card card__item">
-              <img src="./images/our_team/img-1.jpg" alt="Ольга Репина" width="270" height="260" />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\our_team\img-2_lg@1x.jpg 1x,
+                    ./images\our_team\img-2_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\our_team\img-2_md@1x.jpg 1x,
+                    ./images\our_team\img-2_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\our_team\img-2_sm@1x.jpg 1x,
+                    ./images\our_team\img-2_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images/our_team/img-2.jpg" alt="Ольга Репина" />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__description" lang="en">Frontend Developer</p>
@@ -308,12 +392,38 @@
               </div>
             </li>
             <li class="team__card card__item">
-              <img
-                src="./images/our_team/img-2.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\our_team\img-3_lg@1x.jpg 1x,
+                    ./images\our_team\img-3_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\our_team\img-3_md@1x.jpg 1x,
+                    ./images\our_team\img-3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\our_team\img-3_sm@1x.jpg 1x,
+                    ./images\our_team\img-3_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images/our_team/img-3.jpg" alt="Николай Тарасов" />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__title">Миколай Тарасов</h3>
                 <p class="team__description" lang="en">Marketing</p>
@@ -374,12 +484,38 @@
               </div>
             </li>
             <li class="team__card card__item">
-              <img
-                src="./images/our_team/img-3.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\our_team\img-4_lg@1x.jpg 1x,
+                    ./images\our_team\img-4_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\our_team\img-4_md@1x.jpg 1x,
+                    ./images\our_team\img-4_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\our_team\img-4_sm@1x.jpg 1x,
+                    ./images\our_team\img-4_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images/our_team/img-4.jpg" alt="Михаил Ермаков" />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__description" lang="en">UI Designer</p>
@@ -744,5 +880,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
