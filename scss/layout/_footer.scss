@@ -4,6 +4,16 @@
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    
+    @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
 }
 
 .footer__container {
@@ -15,10 +25,10 @@
     align-items: center;
 
     @media screen and (min-width: 768px) {
-                align-items: baseline;
-                flex-direction: row;
-                justify-content: center;
-            }
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: center;
+    }
 
     @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
@@ -31,8 +41,8 @@
     margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
-        width: 50%;
-        margin-bottom: 0;
+    width: 50%;
+    margin-bottom: 0;
     }
 
 @media screen and (min-width: 1200px) {
@@ -47,8 +57,8 @@
     margin-bottom: 20px;
 
     @media screen and (min-width: 1200px) {
-            display: inline-block;
-        }
+    display: inline-block;
+    }
 }
 
 .footer__address-link {
@@ -109,14 +119,14 @@
     margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
-            width: 50%;
-            margin-bottom: 0;
-        }
+    width: 50%;
+    margin-bottom: 0;
+    }
 
     @media screen and (min-width: 1200px) {
-            margin-right: 93px;
-            text-align: left;            
-        }
+    margin-right: 93px;
+    text-align: left;            
+    }
     
 }
 
@@ -127,8 +137,8 @@
     gap: 10px;
 
     @media screen and (min-width: 1200px) {
-            justify-content:flex-start;
-        }
+    justify-content:flex-start;
+    }
 }
 
 .footer__social-link {
@@ -146,8 +156,8 @@
 
     &:hover,
     &:focus {
-        color: var(--secondary-color);
-        background-color: var(--accent-color);
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
     }
 }
 
@@ -191,16 +201,16 @@
     }  
 
     &-lable {
-        text-align: center;
+    text-align: center;
 
-        @media screen and (min-width: 768px) {
-                margin-top: 60px;
-            }
+    @media screen and (min-width: 768px) {
+    margin-top: 60px;
+    }
 
-        @media screen and (min-width: 1200px) {
-                text-align: left;
-            }
-        }
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
+    }
     }
          
 
@@ -223,8 +233,8 @@
     justify-content: center;
 
     @media screen and (min-width: 1200px) {
-            flex-direction: row;
-        }
+    flex-direction: row;
+    }
       
 }
 
@@ -241,8 +251,8 @@
     border-radius: 4px;
 
     @media screen and (min-width: 1200px) {
-            margin-bottom: 0;
-        }
+    margin-bottom: 0;
+    }
 }
 
 .footer__button-icon {
