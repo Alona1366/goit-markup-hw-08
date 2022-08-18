@@ -108,6 +108,7 @@
 
 .portfolio__container {
     @include container;
+    width: 100%;
 }
 
 .portfolio__card-item {
@@ -133,11 +134,16 @@
     transition: var(--animation);
 
     &-block {
-    width: 450px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     
     position: relative;
+
+    @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 294px;
+    }
 
     @media screen and (min-width: 768px) {
     width: 354px;
