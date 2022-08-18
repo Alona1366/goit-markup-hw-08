@@ -20,12 +20,13 @@
 .header__conteiner {
     @include container;
 
+    @media screen and (max-width: 479px) {
     width: 100%;
+    }
 
     display: flex;
     align-items: center;
 
     padding-top: 0;
     padding-bottom: 0;
-
     }
