@@ -18,8 +18,27 @@ padding-bottom: 94px;
 
 .team-container {
 @include container;
-width: 100%;
 
+@media screen and (max-width: 479px) {
+width: 100%;
+}
+}
+
+.title {
+margin-bottom: 30px;
+letter-spacing: 0.03em;
+
+@media screen and (min-width: 768px) {
+margin-bottom: 30px;
+
+font-size: 28px;
+line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+margin-bottom: 50px;
+font-size: 36px;
+}
 }
 
 .team__list {
