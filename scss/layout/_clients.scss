@@ -4,10 +4,10 @@ display: flex;
 padding-top: 60px;
 padding-bottom: 60px;
     
-// @media screen and (min-width: 768px) {
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-// }
+@media screen and (min-width: 768px) {
+padding-top: 60px;
+padding-bottom: 60px;
+}
     
 @media screen and (min-width: 1200px) {
 padding-top: 94px;
@@ -16,13 +16,18 @@ padding-bottom: 94px;
 
 .title {
 margin-bottom: 30px;
+letter-spacing: 0.03em;
 
 @media screen and (min-width: 768px) {
 margin-bottom: 30px;
+
+font-size: 28px;
+line-height: 1.17;
 }
             
 @media screen and (min-width: 1200px) {
 margin-bottom: 50px;
+font-size: 36px;
 }
 }
 }
