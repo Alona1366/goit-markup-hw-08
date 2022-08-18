@@ -20,6 +20,8 @@
 .header__conteiner {
     @include container;
 
+    width: 100%;
+
     display: flex;
     align-items: center;
 
