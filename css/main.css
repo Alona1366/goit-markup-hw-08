@@ -153,7 +153,7 @@ ol {
 
 .logo {
   display: block;
-  margin-right: 50%;
+  margin-right: auto;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -161,11 +161,6 @@ ol {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-}
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 100%;
-  }
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -656,12 +651,19 @@ ol {
 .navigation__conteiner {
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .navigation__conteiner {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .navigation__conteiner {
     margin-right: auto;
     padding-top: 0;
     padding-bottom: 0;
+    width: 738px;
   }
 }
 
